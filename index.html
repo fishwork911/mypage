@@ -1,68 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="르탄이 - 프로필 링크" />
+        <meta property="og:description" content="어서와 코딩은 처음이지?" />
+        <meta property="og:image" content="공유할 이미지" />
+        <title>르탄이 - 프로필 링크</title>
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: #44398A;
+            }
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2023년 버킷리스트</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Hahmlet:wght@700&display=swap');
+            .profile {
+                width: 100px;
+                height: 100px;
 
-        * {
-            font-family: 'Hahmlet', serif;
-        }
+                border-radius: 100%;
 
-        .title {
-            color: white;
-            background-color: tomato;
-            font-size: 24px;
-            padding: 4px 14px;
-            border-radius: 8px;
-        }
+                border: 2px solid white;
 
-        .bg {
-            width: 360px;
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bg-grid.png");
+                background-image: url('르탄이1.png');
+                background-position: center;
+                background-size: cover;
+            }
+            .main {
+                color: white;
+                font-size: 20px;
 
-        }
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .sub {
+                color: white;
+                font-size: 14px;
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .wrap {
+                width: 300px;
+                margin: 30px auto 0px auto;
 
-        .msg {
-            font-weight: bold;
-        }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrap > a {
+                width: 300px;
+                height: 50px;
 
-        .bucket {
-            width: 160px;
-            height: 160px;
-        }
+                background-color: white;
+                border-radius: 8px;
 
-        .img1 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-red.png");
-            background-size: cover;
-            background-position: center;
-        }
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #44398A;
 
-        .img2 {
-            background-image: url("https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/bucket-lightred.png");
-            background-size: cover;
-            background-position: center;
-        }
-    </style>
-    <link rel="stylesheet" type="text/css"
-        href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/bucketList/sparta-bucket2.css">
-</head>
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
-<body class="bg-t5 center">
-    <h1 class="title">2023 신년계획</h1>
-    <p class="msg">올해는 꼭 지키자!!</p>
-    <div class="row flex-row wrap">
-        <div class="bucket img1-t2 center">건강관리 잘하기</div>
-        <div class="bucket img2-t5 center">코딩 잘하기</div>
-        <div class="bucket img2-t4 center">자격증 취득</div>
-        <div class="bucket img1-t4 center">내집 이사하기</div>
-        <div class="bucket img1-t5 center">부수입원 만들기</div>
-        <div class="bucket img2-t2 center">대학원 진학하기</div>
-    </div>
-</body>
+                text-decoration: none;
 
+                box-shadow: 3px 3px 5px 0px black;
+            }
+
+            .wrap > a:hover {
+                background-color: #f2f2f2;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="profile"></div>
+            <h1 class="main">르탄이 홍상균</h1>
+            <p class="sub">코딩.. 좋아하세요?</p>
+            <a target="_blank" href="http://agile-nas.shop//">웹개발 AWS 배포산출물</a>
+            <a target="_blank" href="https://www.youtube.com/@gyeomsonisnothing">시사프로그램 "겸손은 힘들다"</a>
+            <a target="_blank" href="https://www.youtube.com/@3protv">나라를 구하다 : "3PROTV"</a>
+            <a target="_blank" href="https://www.youtube.com/@understanding.">세상의 모든 지식 : 언더스탠딩</a>
+}
+        </div>
+
+    </body>
 </html>
